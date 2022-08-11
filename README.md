@@ -1,2 +1,2 @@
-# Javascript-dasar
+# Javascript-DOM
 Javascript
