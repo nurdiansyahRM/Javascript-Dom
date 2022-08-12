@@ -24,5 +24,13 @@
 // b.getAttribute('id');
 
 const p2 = document.querySelector('.p2');
-p2.classList.add('label');
-p2.classList.remove('label');
+p2.classList.add('p3');
+p2.classList.add('p4');
+
+if (p2.classList.contains('p2')) {
+  p2.classList.toggle('bg');
+}
+
+if (p2.classList.contains('p4')) {
+  p2.classList.replace('p4', 'p5');
+}
