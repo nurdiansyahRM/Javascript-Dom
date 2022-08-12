@@ -5,9 +5,7 @@ p4.style.color = 'green';
 const li2 = document.querySelector('section#b ul li:nth-child(2)');
 li2.style.backgroundColor = 'orange';
 
-// document.querySelectorAll() memilih semua element
-
-const p = document.querySelectorAll('p');
-for (let i = 0; i < p.length; i++) {
-  p[i].style.color = 'red';
-}
+// document.querySelectorAll() memilih semua element -> node list
+const SectionB = document.getElementById('b');
+const p = SectionB.querySelectorAll('p')[0];
+p.style.backgroundColor = 'red';
