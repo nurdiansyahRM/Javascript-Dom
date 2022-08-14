@@ -18,3 +18,32 @@ tombolR.addEventListener('click', function () {
   const b = Math.round(Math.random() * 255 + 1);
   body.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
 });
+
+const sMerah = document.querySelector('input[name=sMerah]');
+const shijau = document.querySelector('input[name=shijau]');
+const sblue = document.querySelector('input[name=sblue]');
+sMerah.addEventListener('input', function () {
+  const r = sMerah.value;
+  const g = shijau.value;
+  const b = sblue.value;
+  body.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+});
+
+shijau.addEventListener('input', function () {
+  const r = sMerah.value;
+  const g = shijau.value;
+  const b = sblue.value;
+  body.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+});
+sblue.addEventListener('input', function () {
+  const r = sMerah.value;
+  const g = shijau.value;
+  const b = sblue.value;
+  body.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+});
+
+body.addEventListener('mousemove', function (event) {
+  const xpos = Math.round((event.clientX / window.innerWidth) * 255);
+  const ypos = Math.round((event.clientY / window.innerHeight) * 255);
+  body.style.backgroundColor = 'rgb(' + xpos + ',' + ypos + ',100)';
+});

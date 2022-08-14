@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>latihan Dom</title>
     <style>
+      html,
+      body {
+        height: 100%;
+      }
       body {
         text-align: center;
       }
@@ -17,6 +21,12 @@
       .merah {
         background-color: red;
       }
+      .hijau {
+        background-color: green;
+      }
+      .blue {
+        background-color: blue;
+      }
       .biru-muda {
         background-color: lightblue;
       }
@@ -27,7 +37,14 @@
     <button class="tombol" type="button">Klik</button>
     <br /><br />
     <div class="kotak merah"></div>
-    <input type="range" name="sMerah" />
+    <input type="range" name="sMerah" min="1" max="255" />
+
+    <div class="kotak hijau"></div>
+    <input type="range" name="shijau" min="1" max="255" />
+
+    <div class="kotak blue"></div>
+    <input type="range" name="sblue" min="1" max="255" />
+
     <script src="main.js"></script>
   </body>
 </html>
