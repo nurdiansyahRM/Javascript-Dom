@@ -10,6 +10,7 @@ body.insertBefore(h2baru, container);
 
 const label = document.createElement('label');
 const textlabel = document.createTextNode('input');
+label.setAttribute('class', 'masukan');
 
 const sectionA = document.getElementById('a');
 const button = sectionA.querySelector('button');
