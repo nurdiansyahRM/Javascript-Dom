@@ -19,3 +19,4 @@ tutup.forEach(function (el) {
 });
 
 const nama = document.querySelector('.nama');
+console.log(nama.nextElementSibling.nextElementSibling);
