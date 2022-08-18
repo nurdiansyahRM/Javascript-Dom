@@ -12,7 +12,6 @@ const paragraf = document.getElementsByTagName('p');
 for (var i = 0; i < paragraf.length; i++) {
   paragraf[i].style.backgroundColor = 'lightblue';
 }
-
 const heading = document.getElementsByTagName('h1');
 for (var i = 0; i < heading.length; i++) {
   heading[i].style.fontSize = '50px';
