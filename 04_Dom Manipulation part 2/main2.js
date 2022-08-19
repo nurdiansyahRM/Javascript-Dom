@@ -20,6 +20,9 @@ sectionA.replaceChild(label, button);
 
 const masukan = document.createElement('input');
 sectionA.appendChild(masukan);
+masukan.setAttribute('type', 'text');
+masukan.classList.add('input');
+masukan.style.backgroundColor = 'red';
 
 const sectionB = document.querySelector('section#b');
 const paragraf = sectionB.querySelector('p');

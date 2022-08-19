@@ -7,7 +7,7 @@
 //   console.log('selesai');
 // });
 
-// setInterval()
+// setInterval();
 // const set = setInterval(() => {
 //   console.log('ok');
 // }, 1000);
@@ -18,8 +18,8 @@
 //   console.log('selesai');
 // });
 
-//program hitung mundur
-const tanggaltujuan = new Date('Aug 15, 2022 20:40:00').getTime();
+// program hitung mundur
+const tanggaltujuan = new Date('Aug 18, 2022 20:40:00').getTime();
 
 const hitungmundur = setInterval(function () {
   const sekarang = new Date().getTime();
@@ -32,7 +32,7 @@ const hitungmundur = setInterval(function () {
 
   const teks = document.getElementById('text');
   teks.innerHTML = 'Waktu anda tinggal : ' + hari + ' hari ' + jam + ' jam ' + menit + ' menit ' + detik + ' detik ';
-  if (selisih < 0) {
+  if (selisih == 0) {
     clearInterval(hitungmundur);
     teks.innerHTML = 'Waktu anda habis!!!!';
   }
